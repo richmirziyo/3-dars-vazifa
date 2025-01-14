@@ -7,5 +7,7 @@
 
 fonaric.addEventListener("click", function () {
   fonar.classList.click("on");
-  if (fonar.classList)
+  if (fonar.classList.contains('on')){
+    fonaric.innerText = 'Chiroqni ochrish'
+  }
 });

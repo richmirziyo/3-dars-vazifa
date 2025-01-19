@@ -5,9 +5,18 @@
 //   fonar.classList.click("on");
 // });
 
-fonaric.addEventListener("click", function () {
-  fonar.classList.click("on");
-  if (fonar.classList.contains('on')){
-    fonaric.innerText = 'Chiroqni ochrish'
+toggle.addEventListener("click", function () {
+  fonar.classList.toggle("on");
+  if (fonar.classList.contains("on")) {
+    toggle.innerText = "Chiroqni ochrish";
+  } else {
+    toggle.innerText = "Chroqni ochrish";
   }
+});
+
+document.addEventListener("mousemove", function ({clientX, clientY}) {
+  fonar.style.cssText = `
+top: ${clientY}px;
+left: ${clientX}px;
+transform: translate(-50%, -50%)`;
 });

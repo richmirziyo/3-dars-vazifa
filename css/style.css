@@ -9,7 +9,7 @@ body {
   padding: 50px;
 }
 
-#fonaric {
+#toggle {
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 600px;
@@ -31,9 +31,11 @@ body {
   display: none;
   position: absolute;
   z-index: 999;
+  pointer-events: none;
 }
 
 .on {
   display: block !important;
-  box-shadow: 0 0 0 999px #000 !important;
+  box-shadow: 0 0 0 9999px #000 !important;
+  
 }
